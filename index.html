@@ -1,11 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>InspiraVoc</title>
 </head>
+
 <body>
-    <h1>InspiraVoc</h1>
+    <header>
+        <!--Barra de Navegación 1-->
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="customer-support">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="content-customer-support">
+                        <span class="text">Soporte al cliente</span>
+                        <span class="number">123-456-7890</span>
+                    </div>
+                </div>
+
+                <div class="container-logo">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h1 class="logo"><a href="/">InspiraVoc</a></h1>
+                </div>
+
+                <div class="container-user">
+                    <div class="auth-buttons">
+                        <a href="#" class="btn">Iniciar Sesión</a>
+                        <a href="#" class="btn register-btn">Registrarse</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Barra de Navegación 2 -->
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#acercade">Acerca de</a></li>
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#mentores">Mentores-Precios</a></li>
+                    <li><a href="#reseñas">Testimonios</a></li>
+                    <li><a href="#equipo">Equipo</a></li>
+                    <li><a href="#aplicacion">Aplicación</a></li>
+                    <li><a href="#aplicacion">Demostración</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+
+                <form class="search-form">
+                    <input type="search" placeholder="Buscar..." id="searchInput" onkeyup="checkEnter(event)" />
+                    <button type="button" class="btn-search" onclick="toggleRecentSearches()">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <div id="recent-searches" class="recent-searches"></div>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <!--Banner Inicio-->
+    <section class="banner">
+        <div class="content-banner">
+            <p>Inspira Voc</p>
+            <h2>Reserva tu sesion personalizada<br />Descubre y asegura tu futuro profesional!</h2>
+            <a href="#">Reserva ahora</a>
+        </div>
+    </section>
+
+    <!--Vista Etiquetas-->
+    <main class="main-content">
+        <section class="container container-features">
+            <div class="card-feature">
+                <i class="fa-solid fa-earth-americas"></i>
+                <div class="feature-content">
+                    <span>Contacta a miles de asesores</span>
+                    <p>Por todo el mundo</p>
+                </div>
+            </div>
+            <div class="card-feature">
+                <i class="fa-solid fa-wallet"></i>
+                <div class="feature-content">
+                    <span>Reembolso</span>
+                    <p>100% garantía de devolución de dinero</p>
+                </div>
+            </div>
+            <div class="card-feature">
+                <i class="fa-solid fa-gift"></i>
+                <div class="feature-content">
+                    <span>Regalo especial</span>
+                    <p>Ofrece bonos especiales con regalo</p>
+                </div>
+            </div>
+            <div class="card-feature">
+                <i class="fa-solid fa-headset"></i>
+                <div class="feature-content">
+                    <span>Servicio al cliente 24/7</span>
+                    <p>LLámenos 24/7 al 123-456-7890</p>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
