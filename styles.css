@@ -1197,3 +1197,448 @@ html {
 	gap: 2rem;
 	margin-bottom: 3rem;
 }
+
+
+.container-categories {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.container-reseñas {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3rem;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.container-categori {
+	grid-column: 1/2;
+	grid-gap: 3rem;
+	/*background-color: lightblue;*/
+    padding: 1rem;
+	max-width: 50%;
+	width: auto;
+}
+
+.container-catego {
+	grid-column: 2/3;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.category-sv1 {
+	background-color: white;
+	background-position: bottom;
+	height: 52rem;
+	width: auto;
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	object-fit: cover;
+	border-radius: 2rem;
+	gap: 2rem;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+	position: relative;
+	transition: all 0.3s ease-in-out;
+}
+
+.category-sv1 p {
+	font-size: 2.5rem;
+	color: black;
+	text-transform: capitalize;
+	position: relative;
+	font-weight: bold;
+	cursor: pointer;
+	transition: transform 0.3s ease;
+}
+
+/*.category-sv1 p:hover {
+	transform: scale(1.1);
+}*/
+.category-sv1:hover img {
+	opacity: 0;
+}
+
+.category-sv1:hover p {
+	opacity: 1;
+}
+
+
+.card-serv-q-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    padding: 1rem;
+    transition: opacity 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.8); 
+    text-align: center;
+}
+
+.category-sv1:hover .card-serv-q-text {
+	opacity: 1;
+}
+
+.card-category-serv {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	padding: 2rem;
+
+	background-color: #e6882a;
+	background-position: bottom;
+
+	height: 25rem;
+	align-items: center;
+	justify-content: center;
+	border-radius: 2rem;
+	gap: 2rem;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+	position: relative;
+	transition: all 0.3s ease-in-out;
+}
+
+.card-category-serv:hover .card-VisMis{
+	opacity: 0;
+}
+
+.card-category-serv:hover .card-VisMis-imagen{
+	opacity: 0;
+}
+
+.card-category-serv:hover::after{
+	content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+	border-radius: 2rem;
+}
+
+.card-category-serv:hover::after {
+    opacity: 1;
+}
+
+.card-serv-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	justify-items: cen;
+    opacity: 0;
+    padding: 2rem;
+    transition: opacity 0.3s ease-in-out;
+	font-size: 3rem;
+    text-align: center;
+}
+
+.card-category-serv:hover .card-serv-text {
+	opacity: 1;
+}
+.card-category-func {
+	position: relative;
+	height: 30rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 2rem;
+	gap: 2rem;
+	transition: 0.2s ease;
+}
+
+.cat-func-imagen{
+	width: auto;
+	height: auto;
+	max-height: 60%;
+	border-radius: 2rem;
+	object-fit: cover;
+	transition: opacity 0.2s ease;
+}
+
+.cat-serv-imagen{
+	width: auto;
+	height: auto;
+	max-height: 80%;
+	border-radius: 2rem;
+	object-fit: cover;
+	cursor: pointer;
+	transition: transform 0.3s ease;
+}
+
+/*.cat-serv-imagen:hover{
+	transform: scale(1.1);
+}*/
+
+.card-VisMis-imagen{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	border-radius: 2rem;
+}
+
+.cat-VisMis-imagen{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: right;
+	padding-left: 3rem;
+
+	width: 80%;
+	height: auto;
+	max-height: 100%;
+	border-radius: 2rem;
+	object-fit: cover;
+	cursor: pointer;
+	transition: transform 0.3s ease;
+}
+
+.card-VisMis{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+    justify-content: center;
+    padding-left: 1rem;
+}
+
+.card-VisMis p {
+	font-size: 6rem;
+	color: #fff;
+	text-transform: capitalize;
+	position: relative;
+	font-weight: bold;
+	cursor: pointer;
+	transition: transform 0.3s ease;
+}
+
+.card-VisMis p:hover {
+	transform: scale(1.1);
+}
+
+.cat-VisMis-imagen:hover{
+	transform: scale(1.1);
+}
+
+.card-category-func::after {
+	content: "";
+	height: 30rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 2rem;
+	gap: 2rem;
+	background-color: #ff6600;
+	font-size: 1.5rem;
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	text-align: center;
+	box-sizing: border-box;
+	transition: opacity 0.2s ease;
+	opacity: 0;
+}
+
+.card-content-func {
+    position: absolute;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    z-index: 2; 
+}
+
+.card-category-func:hover .cat-func-imagen{
+	opacity: 0;
+}
+
+.card-category-func:hover::after{
+	opacity: 1;
+}
+
+.card-category-func:hover .card-content-func {
+    opacity: 1;
+}
+
+.card-category-func .func-titulo {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+	color: white;
+	text-align: left;
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
+
+.card-category-func .func-desc {
+    font-size: 2rem;
+    line-height: 1.5;
+	color: white;
+	text-transform: none;
+	text-align: justify;
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
+
+.card-category-func .func-Vmas {
+    font-size: 2rem;
+    line-height: 1.5;
+	color: white;
+	text-transform: none;
+	text-align: justify;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: transform 0.3s ease;
+}
+
+.card-category-func .func-Vmas:hover {
+    transform: scale(1.02);
+}
+
+.card-category-func p {
+	font-size: 2.5rem;
+	color: black;
+	text-transform: capitalize;
+	position: relative;
+}
+
+.card-category-func span {
+	font-size: 1.8rem;
+	color: #00000060;
+	cursor: pointer;
+}
+
+.card-category p {
+	font-size: 2.5rem;
+	color: black;
+	text-transform: capitalize;
+	position: relative;
+}
+
+.card-category p::after {
+	content: '';
+	width: 2.5rem;
+	height: 2px;
+	background-color: #fff;
+	position: absolute;
+	bottom: -1rem;
+	left: 50%;
+	transform: translate(-50%, 50%);
+}
+
+.card-category span {
+	font-size: 1.8rem;
+	color: #00000060;
+	cursor: pointer;
+}
+
+.card-category span:hover {
+	color: var(--primary-color);
+}
+.casosEx{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 2rem;
+	margin-bottom: 3rem;
+}
+
+.div-casosEx{
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 2rem;
+	align-items: center;
+	justify-items: center;
+}
+
+.card-casos{
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 9fr 4fr;
+	align-items: center;
+	justify-items: center;
+	background-color: #e6882a;
+	border-radius: 2rem;
+	overflow: hidden;
+	transition: transform 0.3s ease;
+	cursor: pointer;
+}
+
+.card-casos:hover {
+	transform: scale(1.03);
+}
+
+.card-casos-img{
+	height: 100%;
+	width: 105%;
+	align-items: center;
+	justify-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.img-casos{
+	height: 101%;
+	width: 101%;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.card-casos-text{
+	height: 85%;
+	width: 90%;
+}
+
+.card-casos-text p {
+	font-size: 1.5rem;
+	color: black;
+	position: relative;
+}
+
+.card-casos-text span {
+	font-size: 2rem;
+	color: black;
+	position: relative;
+	font-weight: bold;
+}
